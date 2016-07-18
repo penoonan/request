@@ -11,6 +11,10 @@
 
 namespace pno\Request;
 
+use pno\File\FileBag;
+use pno\Bag\HeaderBag;
+use pno\Bag\ParameterBag;
+use pno\Bag\ServerBag;
 use pno\Request\Exception\ConflictingHeadersException;
 use pno\Session\SessionInterface;
 
@@ -83,49 +87,49 @@ class Request
     /**
      * Custom parameters.
      *
-     * @var \pno\Request\ParameterBag
+     * @var \pno\Bag\ParameterBag
      */
     public $attributes;
 
     /**
      * Request body parameters ($_POST).
      *
-     * @var \pno\Request\ParameterBag
+     * @var \pno\Bag\ParameterBag
      */
     public $request;
 
     /**
      * Query string parameters ($_GET).
      *
-     * @var \pno\Request\ParameterBag
+     * @var \pno\Bag\ParameterBag
      */
     public $query;
 
     /**
      * Server and execution environment parameters ($_SERVER).
      *
-     * @var \pno\Request\ServerBag
+     * @var \pno\Bag\ServerBag
      */
     public $server;
 
     /**
      * Uploaded files ($_FILES).
      *
-     * @var \pno\Request\FileBag
+     * @var \pno\File\FileBag
      */
     public $files;
 
     /**
      * Cookies ($_COOKIE).
      *
-     * @var \pno\Request\ParameterBag
+     * @var \pno\Bag\ParameterBag
      */
     public $cookies;
 
     /**
      * Headers (taken from the $_SERVER).
      *
-     * @var \pno\Request\HeaderBag
+     * @var \pno\Bag\HeaderBag
      */
     public $headers;
 
