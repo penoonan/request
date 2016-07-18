@@ -12,7 +12,7 @@
 namespace pno\Request;
 
 use pno\Request\Exception\ConflictingHeadersException;
-use pno\Request\Session\SessionInterface;
+use pno\Session\SessionInterface;
 
 /**
  * Request represents an HTTP request.

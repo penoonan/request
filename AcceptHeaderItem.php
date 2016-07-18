@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace pno\Reqeust;
+namespace pno\Request;
 
 /**
  * Represents an Accept-* header item.

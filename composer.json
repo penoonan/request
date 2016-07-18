@@ -23,10 +23,10 @@
         "php": ">=5.5.9"
     },
     "autoload": {
-        "psr-4": { "pno\\Request": "" },
+        "psr-4": { "pno\\Request\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "dev"
 }
