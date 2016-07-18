@@ -1,9 +1,11 @@
-HttpFoundation Component
+HttpFoundation Request Component
 ========================
 
-This library just strips out most of HttpFoundation in order to only use the classes required for abstracting a Request.
+In Wordpress development I kept finding myself wanting to use Symfony's Reqeust object without any of the rest of HttpFoundation.
+
+This library includes only the HttpFoundation classes required for abstracting a Request.
  
-I mostly just wanted to be able to use Symfony's Request object without loading the entire HttpFoundation componenent.
+Note: if you want to use sessions, load "[pno/session](https://github.com/penoonan/session)".
 
 Resources
 ---------
